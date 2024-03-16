@@ -13,35 +13,22 @@
   <div class="xl:container mx-auto px-5">
 
     <header>
+      <button class="btn-nav mt-2">
+        <img src="assets/image/icons8-hamburger-menu-50.png" alt="menu">
+      </button>
 
-        <div class="flex justify-evenly px-2 items-center bg-yellow-500 py-2 dark:bg-gray-800">
-          <div class="flex items-center gap-10">
-            <a href="#">
-              <img class="w-12 h-12" src="assets/image/lion-svgrepo-com.svg" alt="logo">
-            </a>
-            <nav class="hidden md:block nav-active">
-              <ul class="flex gap-7 uppercase">
-                <li><a class="navbar-link" href="#">Home</a></li>
-                <li><a class="navbar-link" href="#">About</a></li>
-                <li><a class="navbar-link" href="#">Register</a></li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="flex">
-            <nav class="hidden md:block nav-active">
-              <ul class="flex gap-7 uppercase">
-                <li><a class="navbar-link" href="">Contact</a></li>
-                <li><a class="navbar-link" href="">Sign In</a></li>
-              </ul>
-            </nav>
-          </div>
-          <button class="md:hidden btn-nav">
-            <img class="" src="assets/image/icons8-hamburger-menu-50.png" alt="menu">
-          </button>
-        </div>
-
-
+      <div class="px-2 bg-yellow-500 py-2 dark:bg-gray-800 min-h-16 nav-active transition duration-300">
+        <nav >
+          <ul class="flex flex-col sm:flex-row sm:justify-evenly gap-3 uppercase items-center">
+            <li> <a class="" href="#"><img class="w-12 h-12" src="assets/image/lion-svgrepo-com.svg" alt="logo"></a></li>
+            <li><a class="navbar-link" href="#">Home</a></li>
+            <li><a class="navbar-link" href="#">About</a></li>
+            <li><a class="navbar-link" href="#">Register</a></li>
+            <li><a class="navbar-link" href="">Contact</a></li>
+            <li><a class="navbar-link" href="">Sign In</a></li>
+          </ul>
+        </nav>
+      </div>
 
     </header>
 
@@ -65,6 +52,7 @@
             <div class="section__hero section__hero--opacity"></div>
           </a>
         </div>
+
       </section>
 
       <section class="flex flex-col md:flex-wrap md:flex-row lg:flex-row lg:flex-nowrap mt-4">
@@ -74,100 +62,89 @@
 
             <div class="flex  flex-col gap-y-3 pl-5 mb-3">
               <div class="flex flex-col">
-                <label class="font-bold text-xl mb-3" for="search-input" class="form-label">Search</label>
-                <input class="w-11/12 py-2 px-1.5 mt-1 rounded-md focus:outline-none" type="search" class="form-control"
-                       id="search-input" placeholder="Search">
+                <label class="font-bold text-xl mb-3" for="search-input">Search</label>
+                <input class="w-11/12 py-2 px-1.5 mt-1 rounded-md focus:outline-none" type="search" id="search-input" placeholder="Search">
               </div>
 
               <div class="flex items-center gap-4">
-                <img class="section__left--img" src="assets/image/left-nav/people-nearby-svgrepo-com.svg">
+                <img class="section__left--img" src="assets/image/left-nav/people-nearby-svgrepo-com.svg" alt="image">
                 <a class="section__left--link" href="#">People</a>
               </div>
 
               <div class="flex items-center gap-4">
-                <img class="section__left--img" src="assets/image/left-nav/favorite-svgrepo-com.svg">
+                <img class="section__left--img" src="assets/image/left-nav/favorite-svgrepo-com.svg" alt="image">
                 <a class="section__left--link" href="#">Favorites</a>
               </div>
 
               <div class="flex items-center gap-4">
                 <img class="section__left--img"
-                     src="assets/image/left-nav/data-development-workflow-data-exploration-recently-opened-svgrepo-com.svg">
+                     src="assets/image/left-nav/data-development-workflow-data-exploration-recently-opened-svgrepo-com.svg" alt="image">
                 <a class="section__left--link" href="#">Workflows</a>
               </div>
 
               <div class="flex items-center gap-4">
-                <img class="section__left--img" src="assets/image/left-nav/megaphone-svgrepo-com.svg">
+                <img class="section__left--img" src="assets/image/left-nav/megaphone-svgrepo-com.svg" alt="image">
                 <a class="section__left--link" href="#">Updates</a>
               </div>
             </div>
 
             <div class="flex flex-col gap-y-3 pl-5 mt-32">
               <div class="flex items-center gap-4">
-                <img class="section__left--img" src="assets/image/left-nav/plugin-2-svgrepo-com.svg">
+                <img class="section__left--img" src="assets/image/left-nav/plugin-2-svgrepo-com.svg" alt="image">
                 <a class="section__left--link" href="#">Plug-ins</a>
               </div>
 
               <div class="flex items-center gap-4">
-                <img class="section__left--img" src="assets/image/left-nav/alert-svgrepo-com.svg">
+                <img class="section__left--img" src="assets/image/left-nav/alert-svgrepo-com.svg" alt="image">
                 <a class="section__left--link" href="#">Notification</a>
               </div>
             </div>
           </div>
+
         </section>
 
         <section class="basis-full md:basis-full lg:basis-12/12 md:order-last lg:basis-6/12 lg:order-none lg:px-1.5">
           <div class="flex flex-col mb-10  gap-5">
 
-            <h1 class="text-3xl font-bold text-gray-950 mt-4 mb-5 dark:text-gray-100">Lorem ipsum dolor sit amet
-              consectetur adipisicing elit.</h1>
+            <h1 class="text-3xl font-bold text-gray-950 mt-4 mb-5 dark:text-gray-100">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
 
             <article class="flex">
-              <img class="" src="assets/image/img-3.jpg" width="200" height="200">
+              <img class="" src="assets/image/img-3.jpg" alt="image" width="200" height="200">
               <div class="flex flex-col gap-y-3 ml-3">
                 <h2 class="section__center--title">Lorem ipsum dolor sit.</h2>
-                <p class="dark:text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est
-                  facere impedit, magni
-                  obcaecati sequi.</p>
+                <p class="dark:text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est facere impedit, magni obcaecati sequi.</p>
               </div>
             </article>
 
             <article class="flex">
-              <img class="" src="assets/image/img-4.jpg" width="200" height="200">
+              <img class="" src="assets/image/img-4.jpg" alt="image" width="200" height="200">
               <div class="flex flex-col gap-y-3 ml-3">
                 <h2 class="section__center--title">Consectetur ducimus inventore sed.</h2>
-                <p class="dark:text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est
-                  facere impedit, magni
-                  obcaecati sequi.</p>
+                <p class="dark:text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est facere impedit, magni obcaecati sequi.</p>
               </div>
             </article>
 
             <article class="flex">
-              <img class="" src="assets/image/img-5.jpg" width="200" height="200">
+              <img class="" src="assets/image/img-5.jpg" alt="image" width="200" height="200">
               <div class="flex flex-col gap-y-3 ml-3">
                 <h2 class="section__center--title">A deleniti esse quaerat!</h2>
-                <p class="dark:text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est
-                  facere impedit, magni
-                  obcaecati sequi.</p>
+                <p class="dark:text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est facere impedit, magni obcaecati sequi.</p>
               </div>
             </article>
 
             <article class="flex">
-              <img class="" src="assets/image/img-6.jpg" width="200" height="200">
+              <img class="" src="assets/image/img-6.jpg" alt="image" width="200" height="200">
               <div class="flex flex-col gap-y-3 ml-3">
                 <h2 class="section__center--title">Eius explicabo quidem voluptate.</h2>
-                <p class="dark:text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est
-                  facere impedit, magni
-                  obcaecati sequi.</p>
+                <p class="dark:text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est facere impedit, magni obcaecati sequi.</p>
               </div>
             </article>
 
             <article class="flex">
-              <img class="" src="assets/image/img-7.jpg" width="200" height="200">
+              <img class="" src="assets/image/img-7.jpg" alt="image" width="200" height="200">
               <div class="flex flex-col gap-y-3 ml-3">
                 <h2 class="section__center--title">Ex hic ipsum vero!</h2>
-                <p class="dark:text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est
-                  facere impedit, magni
-                  obcaecati sequi.</p>
+                <p class="dark:text-gray-100">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est facere impedit, magni obcaecati sequi.</p>
               </div>
             </article>
           </div>
@@ -189,35 +166,30 @@
 
         <section class="basis-full mt-5 md:mt-0 md:basis-6/12 md:-order-1 md:pl-1 lg:basis-3/12 lg:order-none">
 
-          <div
-            class="flex flex-col items-center gap-y-3  py-3 bg-yellow-500 rounded-md md:pb-36 dark:bg-gray-800  dark:text-gray-100">
+          <div class="flex flex-col items-center gap-y-3  py-3 bg-yellow-500 rounded-md md:pb-36 dark:bg-gray-800 dark:text-gray-100">
 
             <div class="flex flex-col  items-center w-full">
-              <label class="font-bold text-xl" for="email-input" class="form-label">Email address</label>
-              <input class="section__right--input" type="email" class="form-control"
-                     id="email-input" placeholder="name@example.com">
+              <label class="font-bold text-xl" for="email-input">Email address</label>
+              <input class="section__right--input" type="email" id="email-input" placeholder="name@example.com">
             </div>
 
             <div class="flex flex-col items-center w-full">
-              <label class="font-bold text-xl" for="name-input" class="form-label">Name</label>
-              <input class="section__right--input" type="text" class="form-control"
-                     id="name-input" placeholder="Name">
+              <label class="font-bold text-xl" for="name-input">Name</label>
+              <input class="section__right--input" type="text" id="name-input" placeholder="Name">
             </div>
 
             <div class="flex flex-col items-center w-full">
-              <label class="font-bold text-xl" for="password-input" class="form-label">Password</label>
-              <input class="section__right--input" type="password" class="form-control"
-                     id="password-input" placeholder="Password">
+              <label class="font-bold text-xl" for="password-input">Password</label>
+              <input class="section__right--input" type="password" id="password-input" placeholder="Password">
             </div>
 
             <div class="flex flex-col items-center w-full">
-              <label class="font-bold text-xl" for="formFile" class="form-label">Default foto</label>
-              <input class="p-1 mt-1 rounded-md focus:outline-none" class="form-control" type="file"
-                     id="formFile">
+              <label class="font-bold text-xl" for="formFile">Default foto</label>
+              <input class="p-1 mt-1 rounded-md focus:outline-none" type="file" id="formFile">
             </div>
 
             <div class="flex flex-col items-center w-full">
-              <label class="font-bold text-xl" for="exampleFormControlTextarea1" class="form-label">Example
+              <label class="font-bold text-xl" for="exampleFormControlTextarea1">Example
                 textarea</label>
               <textarea class="section__right--input " id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
@@ -229,6 +201,7 @@
               </button>
             </div>
           </div>
+
         </section>
       </section>
     </main>
@@ -258,9 +231,7 @@
             <div class="flex flex-col justify-start">
               <label for="email">Enter your email address</label>
               <input class="mt-2 rounded ps-2 focus:outline-none" id="email" type="text" placeholder="Email address">
-              <button
-                class="w-28 mt-2 p-1.5 bg-gray-200 text-gray-950 font-bold  rounded-xl hover:bg-gray-400 ease-in duration-150 hover:text-gray-50"
-                type="button">Subscribe
+              <button class="w-28 mt-2 p-1.5 bg-gray-200 text-gray-950 font-bold  rounded-xl hover:bg-gray-400 ease-in duration-150 hover:text-gray-50" type="button">Subscribe
               </button>
             </div>
           </form>
@@ -268,14 +239,12 @@
       </div>
 
       <div class="border-t-2 flex mx-auto w-10/12 justify-center items-center gap-10 pt-3">
-        <a class="font-bold text-lg ease-in duration-150 hover:underline underline-offset-8  hover:text-gray-600"
-           href="#">&copy;Alex-DeveloperFS</a>
+        <a class="font-bold text-lg ease-in duration-150 hover:underline underline-offset-8  hover:text-gray-600" href="#">&copy;Alex-DeveloperFS</a>
         <ul class="flex items-center justify-center gap-8">
-          <li><a href="#"><img class="footer__link--social w-10 h-10 "
-                               src="assets/image/facebook-messenger-svgrepo-com.svg"></a></li>
-          <li><a href="#"><img class="footer__link--social w-10 h-10 " src="assets/image/instagram-svgrepo-com.svg"></a>
+          <li><a href="#"><img class="footer__link--social w-10 h-10 " src="assets/image/facebook-messenger-svgrepo-com.svg" alt="image"></a></li>
+          <li><a href="#"><img class="footer__link--social w-10 h-10 " src="assets/image/instagram-svgrepo-com.svg" alt="image"></a>
           </li>
-          <li><a href="#"><img class="footer__link--social w-10 h-9 " src="assets/image/github-142-svgrepo-com.svg"></a>
+          <li><a href="#"><img class="footer__link--social w-10 h-9 " src="assets/image/github-142-svgrepo-com.svg" alt="image"></a>
           </li>
         </ul>
       </div>
