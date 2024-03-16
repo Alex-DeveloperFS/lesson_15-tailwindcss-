@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zxx">
 <head>
   <meta charset="UTF-8">
@@ -12,25 +12,28 @@
 <div class="xl:container mx-auto px-5">
 
   <header>
-    <div class=" flex justify-around items-center bg-amber-400 py-2 shadow-2xl">
+    <div class=" flex justify-around items-center bg-yellow-500 py-2 shadow-2xl">
       <div class="flex items-center gap-10">
+
+               
+
         <a href="#">
           <img class="w-12 h-12" src="assets/image/lion-svgrepo-com.svg" alt="logo">
         </a>
-        <nav class="">
+        <nav class="hidden md:block">
           <ul class="flex gap-7 uppercase">
-            <li class="border border-black p-1">Home</li>
-            <li class="border border-black p-1">About</li>
-            <li class="border border-black p-1">Register</li>
+            <li><a class="text-gray-950 font-bold py-3 px-2 ease-in duration-75 hover:underline underline-offset-4  hover:text-gray-600" href="#">Home</a></li>
+            <li><a class="text-gray-950 font-bold py-3 px-2 ease-in duration-75 hover:underline underline-offset-4  hover:text-gray-600" href="#">About</a></li>
+            <li><a class="text-gray-950 font-bold py-3 px-2 ease-in duration-75 hover:underline underline-offset-4  hover:text-gray-600" href="#">Register</a></li>
           </ul>
         </nav>
       </div>
 
       <div class="flex">
-        <nav>
+        <nav class="hidden md:block">
           <ul class="flex gap-7 uppercase">
-            <li class="border border-black p-1">Contact</li>
-            <li class="border border-black p-1">Sign In</li>
+            <li><a class="text-gray-950 font-bold py-3 px-2 ease-in duration-75 hover:underline underline-offset-4  hover:text-gray-600" href="">Contact</a></li>
+            <li><a class="text-gray-950 font-bold py-3 px-2 ease-in duration-75 hover:underline underline-offset-4  hover:text-gray-600" href="">Sign In</a></li>
           </ul>
         </nav>
 
@@ -40,31 +43,207 @@
   </header>
 
   <main>
-    <div class="flex flex-row mt-4">
-      <div class="basis-3/12 bg-amber-400">01</div>
-      <div class="basis-7/12 bg-amber-800">02</div>
-      <div class="basis-2/12 bg-amber-200">03</div>
+    <section class="flex flex-row mt-4 gap-1 min-h-96">
 
-    </div>
+      <div class="relative basis-7/12 overflow-hidden">
+        <a class="group" href="#">
+          <img class="absolute left-0 top-0 w-full h-full object-cover group-hover:scale-110" src="assets/image/img-1.jpg" alt="image">
+          <h2 class="z-10 px-3 absolute bottom-0 left-0 text-4xl font-semibold text-gray-100">Lorem ipsum dolor sit
+            amet.</h2>
+          <div class="absolute left-0 top-0 w-full h-full bg-gradient-to-tr from-red-600/60"></div>
+        </a>
+      </div>
+
+      <div class="relative basis-5/12 overflow-hidden">
+        <a class="group" href="">
+          <img class="absolute left-0 top-0 w-full h-full object-cover group-hover:scale-110" src="assets/image/img-2.jpg" alt="image">
+          <h2 class="z-10 px-3 absolute bottom-0 left-0 text-4xl font-semibold text-gray-100">Lorem ipsum dolor sit
+            amet.</h2>
+          <div class="absolute left-0 top-0 w-full h-full bg-gradient-to-tr from-red-600/60"></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="flex flex-row mt-4">
+      <section class="basis-3/12 lg:basis-6/12 ">
+
+        <div class="bg-yellow-500 py-5 rounded-md">
+
+          <div class="flex flex-col gap-y-3 pl-5 mb-3">
+            <div class="flex flex-col">
+              <label class="font-bold text-xl mb-3" for="search-input" class="form-label">Search</label>
+              <input class="w-11/12 py-2 px-1.5 mt-1 rounded-md focus:outline-none" type="search" class="form-control"
+                     id="search-input" placeholder="Search">
+            </div>
+
+            <div class="flex items-center gap-4">
+              <img class="w-11" src="assets/image/left-nav/people-nearby-svgrepo-com.svg">
+              <a class="text-gray-950 text-xl font-bold uppercase py-3 px-2 ease-in duration-75 hover:underline underline-offset-4 hover:text-gray-600" href="#">People</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <img class="w-11" src="assets/image/left-nav/favorite-svgrepo-com.svg">
+              <a class="text-gray-950 text-xl font-bold uppercase py-3 px-2 ease-in duration-75 hover:underline underline-offset-4 hover:text-gray-600" href="#">Favorites</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <img class="w-11"
+                   src="assets/image/left-nav/data-development-workflow-data-exploration-recently-opened-svgrepo-com.svg">
+              <a class="text-gray-950 text-xl font-bold uppercase py-3 px-2 ease-in duration-75 hover:underline underline-offset-4 hover:text-gray-600" href="#">Workflows</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <img class="w-11" src="assets/image/left-nav/megaphone-svgrepo-com.svg">
+              <a class="text-gray-950 text-xl font-bold uppercase py-3 px-2 ease-in duration-75 hover:underline underline-offset-4 hover:text-gray-600" href="#">Updates</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-y-3 pl-5 mt-32">
+            <div class="flex items-center gap-4">
+              <img class="w-11" src="assets/image/left-nav/plugin-2-svgrepo-com.svg">
+              <a class="text-gray-950 text-xl font-bold uppercase py-3 px-2 ease-in duration-75 hover:underline underline-offset-4 hover:text-gray-600" href="#">Plug-ins</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <img class="w-11" src="assets/image/left-nav/alert-svgrepo-com.svg">
+              <a class="text-gray-950 text-xl font-bold uppercase py-3 px-2 ease-in duration-75 hover:underline underline-offset-4 hover:text-gray-600" href="#">Notification</a>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+      <section class="basis-7/12 lg:basis-12/12 px-2">
+        <div class="flex flex-col mb-10  gap-5">
+
+          <h1 class="text-3xl font-bold text-gray-950 mt-4 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+
+          <article class="flex">
+            <img class="" src="assets/image/img-3.jpg" width="200" height="200">
+            <div class="flex flex-col gap-y-3 ml-3">
+              <h2 class="text-2xl font-semibold text-gray-700">Lorem ipsum dolor sit.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est facere impedit, magni
+                obcaecati sequi.</p>
+            </div>
+          </article>
+
+          <article class="flex">
+            <img class="" src="assets/image/img-4.jpg" width="200" height="200">
+            <div class="flex flex-col gap-y-3 ml-3">
+              <h2 class="text-2xl font-semibold text-gray-700">Consectetur ducimus inventore sed.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est facere impedit, magni
+                obcaecati sequi.</p>
+            </div>
+          </article>
+
+          <article class="flex">
+            <img class="" src="assets/image/img-5.jpg" width="200" height="200">
+            <div class="flex flex-col gap-y-3 ml-3">
+              <h2 class="text-2xl font-semibold text-gray-700">A deleniti esse quaerat!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est facere impedit, magni
+                obcaecati sequi.</p>
+            </div>
+          </article>
+
+          <article class="flex">
+            <img class="" src="assets/image/img-6.jpg" width="200" height="200">
+            <div class="flex flex-col gap-y-3 ml-3">
+              <h2 class="text-2xl font-semibold text-gray-700">Eius explicabo quidem voluptate.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est facere impedit, magni
+                obcaecati sequi.</p>
+            </div>
+          </article>
+
+          <article class="flex">
+            <img class="" src="assets/image/img-7.jpg" width="200" height="200">
+            <div class="flex flex-col gap-y-3 ml-3">
+              <h2 class="text-2xl font-semibold text-gray-700">Ex hic ipsum vero!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est facere impedit, magni
+                obcaecati sequi.</p>
+            </div>
+          </article>
+        </div>
+
+        <div>
+          <ul class="flex justify-center">
+            <li><a class="border border-black hover:bg-gray-200 text-gray-500 hover:text-gray-700 px-3 py-1 rounded-l">First</a>
+            </li>
+            <li><a class="border border-black hover:bg-gray-200 text-gray-500 hover:text-gray-700 px-3 py-1 ">Prev</a>
+            </li>
+            <li><a class="border border-black hover:bg-gray-200 text-gray-500 hover:text-gray-700 px-3 py-1 ">1</a></li>
+            <li><a class="border border-black hover:bg-gray-200 text-gray-500 hover:text-gray-700 px-3 py-1 ">2</a></li>
+            <li><a class="border border-black hover:bg-gray-200 text-gray-500 hover:text-gray-700 px-3 py-1 ">3</a></li>
+            <li><a class="border border-black hover:bg-gray-200 text-gray-500 hover:text-gray-700 px-3 py-1 ">4</a></li>
+            <li><a class="border border-black hover:bg-gray-200 text-gray-500 hover:text-gray-700 px-3 py-1 ">5</a></li>
+            <li><a class="border border-black hover:bg-gray-200 text-gray-500 hover:text-gray-700 px-3 py-1 ">Next</a>
+            </li>
+            <li><a class="border border-black hover:bg-gray-200 text-gray-500 hover:text-gray-700 px-3 py-1 rounded-r">Last</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="basis-2/12 lg:basis-6/12">
+
+        <div class="flex flex-col content-start gap-y-3 py-3 bg-yellow-500 rounded-md">
+
+          <div class="flex flex-col  items-center w-80">
+            <label class="font-bold text-xl" for="email-input" class="form-label">Email address</label>
+            <input class="w-11/12 p-1 mt-1 rounded-md focus:outline-none" type="email" class="form-control"
+                   id="email-input" placeholder="name@example.com">
+          </div>
+
+          <div class="flex flex-col items-center w-80">
+            <label class="font-bold text-xl" for="name-input" class="form-label">Name</label>
+            <input class="w-11/12 p-1 mt-1 rounded-md focus:outline-none" type="text" class="form-control"
+                   id="name-input" placeholder="Name">
+          </div>
+
+          <div class="flex flex-col items-center w-80">
+            <label class="font-bold text-xl" for="password-input" class="form-label">Password</label>
+            <input class="w-11/12 p-1 mt-1 rounded-md focus:outline-none" type="password" class="form-control"
+                   id="password-input" placeholder="Password">
+          </div>
+
+          <div class="flex flex-col items-center w-80">
+            <label class="font-bold text-xl" for="formFile" class="form-label">Default foto</label>
+            <input class="w-11/12 p-1 mt-1 rounded-md focus:outline-none" class="form-control" type="file"
+                   id="formFile">
+          </div>
+
+          <div class="flex flex-col items-center w-80">
+            <label class="font-bold text-xl" for="exampleFormControlTextarea1" class="form-label">Example
+              textarea</label>
+            <textarea class="w-11/12 p-1 mt-1 rounded-md focus:outline-none" id="exampleFormControlTextarea1"
+                      rows="3"></textarea>
+          </div>
+
+          <div class="flex flex-col items-center w-80">
+            <button class="w-6/12 p-1 mt-1 rounded-md  bg-gray-200 text-gray-950 font-bold  rounded-xl hover:bg-gray-400 ease-in duration-150 hover:text-gray-50" type="submit">Submit
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
   </main>
 
-  <footer class="mt-4 py-10 bg-amber-400 shadow-2xl">
+  <footer class="mt-4 py-10 bg-yellow-500 shadow-2xl">
     <div class="flex justify-evenly pb-5">
       <div>
         <h5 class="font-bold text-lg">Section</h5>
-        <ul>
-          <li>Home</li>
-          <li>FAQs</li>
-          <li>About</li>
+        <ul class="flex flex-col gap-y-3 mt-3">
+          <li><a class="text-gray-950 font-bold py-3  ease-in duration-150 hover:underline underline-offset-4  hover:text-gray-600" href="#">Home</a></li>
+          <li><a class="text-gray-950 font-bold py-3  ease-in duration-150 hover:underline underline-offset-4  hover:text-gray-600" href="#">FAQs</a></li>
+          <li><a class="text-gray-950 font-bold py-3  ease-in duration-150 hover:underline underline-offset-4  hover:text-gray-600" href="#">About</a></li>
         </ul>
       </div>
 
       <div>
         <h5 class="font-bold text-lg">Section</h5>
-        <ul>
-          <li>Features</li>
-          <li>Pricing</li>
-          <li></li>
+        <ul class="flex flex-col gap-y-3 mt-3">
+          <li><a class="text-gray-950 font-bold py-3 ease-in duration-150 hover:underline underline-offset-4  hover:text-gray-600" href="#">Features</a></li>
+          <li><a class="text-gray-950 font-bold py-3 ease-in duration-150 hover:underline underline-offset-4  hover:text-gray-600" href="#">Pricing</a></li>
         </ul>
       </div>
 
@@ -74,19 +253,19 @@
 
           <div class="flex flex-col justify-start">
             <label for="email">Enter your email address</label>
-            <input class="mt-2 rounded ps-2" id="email" type="text" placeholder="Email address">
-            <button class="w-28 mt-2 p-1.5 bg-black text-white  rounded-xl" type="button">Subscribe</button>
+            <input class="mt-2 rounded ps-2 focus:outline-none" id="email" type="text" placeholder="Email address">
+            <button class="w-28 mt-2 p-1.5 bg-gray-200 text-gray-950 font-bold  rounded-xl hover:bg-gray-400 ease-in duration-150 hover:text-gray-50" type="button">Subscribe</button>
           </div>
         </form>
       </div>
     </div>
 
     <div class="border-t-2 flex mx-auto w-10/12 justify-center items-center gap-10 pt-3">
-      <a class="font-bold text-lg hover:underline underline-offset-8" href="#">&copy;Alex-DeveloperFS</a>
+      <a class="font-bold text-lg ease-in duration-150 hover:underline underline-offset-8  hover:text-gray-600" href="#">&copy;Alex-DeveloperFS</a>
       <ul class="flex items-center justify-center gap-8">
-        <li><a href="#"><img class="w-10 h-10" src="assets/image/facebook-messenger-svgrepo-com.svg"></a></li>
-        <li><a href="#"><img class="w-10 h-10" src="assets/image/instagram-svgrepo-com.svg"></a></li>
-        <li><a href="#"><img class="w-10 h-9" src="assets/image/github-142-svgrepo-com.svg"></a></li>
+        <li><a href="#"><img class="hover:scale-150 ease-in duration-150 w-10 h-10" src="assets/image/facebook-messenger-svgrepo-com.svg"></a></li>
+        <li><a href="#"><img class="hover:scale-150 ease-in duration-150 w-10 h-10" src="assets/image/instagram-svgrepo-com.svg"></a></li>
+        <li><a href="#"><img class="hover:scale-150 ease-in duration-150 w-10 h-9" src="assets/image/github-142-svgrepo-com.svg"></a></li>
       </ul>
     </div>
   </footer>
